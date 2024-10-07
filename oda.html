@@ -3,22 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eiichiro Oda - Wikipedia</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eiichiro Oda - Biography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Styling for navigation links */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #00796B; /* Color blind safe color */
+            font-weight: bold;
+        }
+
+        /* Wrapper for content to limit word line length */
+        .wrapper {
+            max-width: 60ch; /* Approximately 100 characters per line */
+            margin: 0 auto;
+            padding: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Improve readability */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 1rem;
+            color: #263238; /* Dark gray for better contrast */
+            background-color: #FAFAFA; /* Light gray for better contrast */
+        }
+
+        /* Heading styles */
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: #004D40; /* Color blind safe color */
+        }
+
+        /* Visually hide elements while keeping them accessible */
+        .visually-hidden, .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            white-space: nowrap;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #B2DFDB; /* Light teal for color contrast */
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Eiichiro Oda</h1>
-        <p><strong>Born:</strong> January 1, 1975 (age 49), Kumamoto, Japan</p>
-        <p><strong>Occupation:</strong> Manga artist</p>
-        <p><strong>Years active:</strong> 1992–present</p>
-        <p><strong>Notable works:</strong> One Piece</p>
-        <p><strong>Notable awards:</strong> Grand Prize at 41st Japan Cartoonists Association Award</p>
-        <p><strong>Spouse:</strong> Chiaki Inaba (m. 2004)</p>
-        <p><strong>Children:</strong> 2</p>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#early-life">Early Life</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#personal-life">Personal Life</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#works">Works</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="wrapper">
         <section id="introduction">
+            <h1>Eiichiro Oda</h1>
             <p>Eiichiro Oda (Japanese: 尾田 栄一郎, Hepburn: Oda Eiichirō, born January 1, 1975) is a Japanese manga artist and the creator of the series <em>One Piece</em>. With more than 523.2 million tankōbon copies in circulation worldwide, <em>One Piece</em> is both the best-selling manga in history and the best-selling comic series printed in volume, making Oda one of the best-selling fiction authors. The series' popularity resulted in Oda being named one of the manga artists who changed the history of manga.</p>
         </section>
 
@@ -81,17 +145,9 @@
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#early-life">Early Life</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#personal-life">Personal Life</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#works">Works</a></li>
-            </ul>
-        </nav>
-        <p>From Wikipedia, the free encyclopedia</p>
+        <p>&copy; 2024 Eiichiro Oda Biography Page. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
