@@ -7,7 +7,7 @@
     <title>Eiichiro Oda - Biography</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* Styling for navigation links */
+       
         nav ul {
             list-style-type: none;
             display: flex;
@@ -18,33 +18,42 @@
 
         nav a {
             text-decoration: none;
-            color: #00796B; /* Color blind safe color */
+            color: #00796B; 
             font-weight: bold;
         }
 
-        /* Wrapper for content to limit word line length */
         .wrapper {
-            max-width: 60ch; /* Approximately 100 characters per line */
+            max-width: 60ch; 
             margin: 0 auto;
             padding: 1rem;
             line-height: 1.8;
         }
 
-        /* Improve readability */
+    
         body {
             font-family: 'Roboto', Arial, sans-serif;
             font-size: 1rem;
-            color: #263238; /* Dark gray for better contrast */
-            background-color: #FAFAFA; /* Light gray for better contrast */
+            color: #263238; 
+            background-color: #FAFAFA;
         }
 
-        /* Heading styles */
         h1, h2, h3 {
             font-family: 'Merriweather', serif;
-            color: #004D40; /* Color blind safe color */
+            color: #004D40;
         }
 
-        /* Visually hide elements while keeping them accessible */
+        header {
+            background-color: #004D40; 
+            color: #FAFAFA;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
         .visually-hidden, .sr-only {
             position: absolute;
             width: 1px;
@@ -57,19 +66,19 @@
             white-space: nowrap;
         }
 
-        /* Footer styling */
+  
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #B2DFDB; /* Light teal for color contrast */
+            background-color: #B2DFDB; 
             margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="visually-hidden">Eiichiro Oda Biography Page</h1>
-        <nav>
+        <h1>Eiichiro Oda</h1>
+        <nav id="Navigation Bar">
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#early-life">Early Life</a></li>
@@ -148,7 +157,5 @@
     <footer>
         <p>&copy; 2024 Eiichiro Oda Biography Page. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
