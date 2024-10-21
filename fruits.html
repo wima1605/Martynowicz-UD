@@ -139,7 +139,7 @@
 
 <section id="grapes">
     <h2>Grapes</h2>
-    <img src="fruit/grapes.jpg" alt="A bunch of green grapes" width="200" height="200">
+    <img src="fruit/grape.jpg" alt="A bunch of green grapes" width="200" height="200">
     <p>Grapes are small, juicy fruits that can be eaten fresh or used to make wine, juice, and jelly. They come in different colors, such as green, red, and black, and are packed with antioxidants.</p>
 </section>
 
@@ -155,35 +155,38 @@
     <p>Strawberries are bright red, juicy, and have a sweet flavor. They are rich in vitamin C and antioxidants and are often used in desserts, salads, and smoothies.</p>
 </section>
 
+<section id="fruit-survey">
+    <h2>Fruit Survey</h2>
+    <form id="fruit-survey-form">
+        <label for="favorite-fruit">What is your favorite fruit?</label>
+        <select id="favorite-fruit" name="favorite-fruit">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="grapes">Grapes</option>
+            <option value="orange">Orange</option>
+            <option value="strawberry">Strawberry</option>
+        </select>
 
-        <section id="fruit-survey">
-            <h2>Fruit Survey</h2>
-            <form action="#" method="post">
-                <label for="favorite-fruit">What is your favorite fruit?</label>
-                <select id="favorite-fruit" name="favorite-fruit">
-                    <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="grapes">Grapes</option>
-                    <option value="orange">Orange</option>
-                    <option value="strawberry">Strawberry</option>
-                </select>
+        <label for="reason">Why do you like it?</label>
+        <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
 
-                <label for="reason">Why do you like it?</label>
-                <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
 
-                <button type="submit">Submit</button>
-            </form>
-            
+    <p id="submission-message" style="display: none; color: green; font-weight: bold;">
+        Thank you for your submission!
+    </p>
+</section>
+
 <script>
     document.getElementById('fruit-survey-form').addEventListener('submit', function(event) {
-        const fruit = document.getElementById('favorite-fruit').value;
-        const reason = document.getElementById('reason').value;
-        console.log('Favorite Fruit:', fruit);
-        console.log('Reason:', reason);
-
-        alert('Form submitted! You like ' + fruit + ' because ' + reason);
+        event.preventDefault();  
+        const submissionMessage = document.getElementById('submission-message');
+        submissionMessage.style.display = 'block'; 
+        document.getElementById('fruit-survey-form').reset();  
     });
 </script>
+
         </section>
 
         <section id="nutrition-table">
