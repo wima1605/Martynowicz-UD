@@ -167,6 +167,17 @@
 
                 <button type="submit">Submit</button>
             </form>
+            
+<script>
+    document.getElementById('fruit-survey-form').addEventListener('submit', function(event) {
+        const fruit = document.getElementById('favorite-fruit').value;
+        const reason = document.getElementById('reason').value;
+        console.log('Favorite Fruit:', fruit);
+        console.log('Reason:', reason);
+
+        alert('Form submitted! You like ' + fruit + ' because ' + reason);
+    });
+</script>
         </section>
 
         <section id="nutrition-table">
