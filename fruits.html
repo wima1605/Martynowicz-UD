@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top 5 Fruits Ever</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 1rem;
+            color: #263238;
+            background-color: #FAFAFA;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: #004D40;
+        }
+        header {
+            background-color: #B2DFDB;
+            color: #FAFAFA;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #004D40;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .wrapper {
+            max-width: 60ch;
+            margin: 0 auto;
+            padding: 1rem;
+            line-height: 1.8;
+        }
+        .visually-hidden, .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            white-space: nowrap;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #004D40;
+            color: #FFFFFF;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        table, th, td {
+            border: 1px solid #004D40;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #B2DFDB;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #B2DFDB;
+            margin-top: 2rem;
+        }
+        form {
+            margin-top: 2rem;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+        .material-icons {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Top 5 Fruits Ever</h1>
+        <nav aria-label="Main Navigation">
+            <h2 class="visually-hidden">Navigation</h2>
+            <ul>
+                <li><a href="#apple">Apple</a></li>
+                <li><a href="#banana">Banana</a></li>
+                <li><a href="#grapes">Grapes</a></li>
+                <li><a href="#orange">Orange</a></li>
+                <li><a href="#strawberry">Strawberry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="wrapper">
+        <section id="apple">
+            <h2>Apple</h2>
+            <p>Apples are one of the most popular fruits in the world. They come in a variety of colors, including red, green, and yellow. They are known for their crisp texture and sweet or tart taste.</p>
+        </section>
+
+        <section id="banana">
+            <h2>Banana</h2>
+            <p>Bananas are a great source of potassium and make for a perfect snack. They are naturally sweet, soft, and easy to eat on the go. They are also often used in smoothies and desserts.</p>
+        </section>
+
+        <section id="grapes">
+            <h2>Grapes</h2>
+            <p>Grapes are small, juicy fruits that can be eaten fresh or used to make wine, juice, and jelly. They come in different colors, such as green, red, and black, and are packed with antioxidants.</p>
+        </section>
+
+        <section id="orange">
+            <h2>Orange</h2>
+            <p>Oranges are a citrus fruit known for their juicy and tangy flavor. They are an excellent source of vitamin C and are commonly enjoyed as a snack or in juice form.</p>
+        </section>
+
+        <section id="strawberry">
+            <h2>Strawberry</h2>
+            <p>Strawberries are bright red, juicy, and have a sweet flavor. They are rich in vitamin C and antioxidants and are often used in desserts, salads, and smoothies.</p>
+        </section>
+
+        <section id="fruit-survey">
+            <h2>Fruit Survey</h2>
+            <form action="#" method="post">
+                <label for="favorite-fruit">What is your favorite fruit?</label>
+                <select id="favorite-fruit" name="favorite-fruit">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="orange">Orange</option>
+                    <option value="strawberry">Strawberry</option>
+                </select>
+
+                <label for="reason">Why do you like it?</label>
+                <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="nutrition-table">
+            <h2>Nutrition Facts of Top Fruits</h2>
+            <table aria-describedby="nutrition-info">
+                <caption id="nutrition-info">Nutritional comparison of the top 5 fruits.</caption>
+                <thead>
+                    <tr>
+                        <th>Fruit</th>
+                        <th>Calories (per 100g)</th>
+                        <th>Vitamin C (mg)</th>
+                        <th>Potassium (mg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple</td>
+                        <td>52</td>
+                        <td>4.6</td>
+                        <td>107</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>89</td>
+                        <td>8.7</td>
+                        <td>358</td>
+                    </tr>
+                    <tr>
+                        <td>Grapes</td>
+                        <td>69</td>
+                        <td>10.8</td>
+                        <td>191</td>
+                    </tr>
+                    <tr>
+                        <td>Orange</td>
+                        <td>47</td>
+                        <td>53.2</td>
+                        <td>181</td>
+                    </tr>
+                    <tr>
+                        <td>Strawberry</td>
+                        <td>32</td>
+                        <td>58.8</td>
+                        <td>153</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Top 5 Fruits. All rights reserved.</p>
+    </footer>
+
+    <span class="material-icons" aria-hidden="true">favorite</span>
+</body>
+</html>
