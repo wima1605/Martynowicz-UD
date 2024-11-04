@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bill Martynowicz's Class Portal</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to Bill Martynowicz's Class Portal</h1>
+        </header>
+
+        <nav class="nav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -17,38 +22,46 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome to Bill Martynowicz's Class Portal</h1>
-            <p>This is the landing page for all my class projects and assignments.</p>
-        </section>
+        <aside class="aside-left">
+            <h2>Announcements</h2>
+            <p>Check here for important class announcements and updates.</p>
+        </aside>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Bill Martynowicz, a Computer Science student at CU Boulder. I'm passionate about skiing, video games, and competitive bowling. I'm also a huge WNBA fan and I'm excited about the league's expansion, particularly the Golden State Valkyries!</p>
-        </section>
+        <main class="main">
+            <section id="hero">
+                <p>This is the landing page for all my class projects and assignments.</p>
+            </section>
 
-        <section id="assignments">
-            <h2>My Coding Assignments</h2>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Bill Martynowicz, a Computer Science student at CU Boulder. I'm passionate about skiing, video games, and competitive bowling. I'm also a huge WNBA fan and I'm excited about the league's expansion, particularly the Golden State Valkyries!</p>
+            </section>
+
+            <section id="assignments">
+                <h2>My Coding Assignments</h2>
+                <ul>
+                    <li><a href="oda.html">Assignment 1</a> (Oda page)</li>
+                    <li><a href="fruits.html">Assignment 2</a> (Fruits page)</li>
+                    <li><a href="#">Assignment 3</a> (Placeholder for future assignments)</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="aside-right">
+            <h2>Useful Links</h2>
             <ul>
-                 <li><a href="oda.html">Assignment 1</a> (Oda page)</li>
-                <li><a href="fruits.html">Assignment 2</a> (Fruits page)</li>
-                <li><a href="#">Assignment 3</a> (Placeholder for future assignments)</li>
+                <li><a href="https://www.cuboulder.edu">CU Boulder</a></li>
+                <li><a href="https://www.wnba.com">WNBA</a></li>
+                <li><a href="https://www.github.com">GitHub</a></li>
             </ul>
-        </section>
+        </aside>
 
-        <section id="contact">
+        <footer class="footer">
             <h2>Contact Information</h2>
             <p>If you need to reach me, feel free to contact me at my email: <a href="mailto:wima1605@colorado.edu">wima1605@colorado.edu</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Bill Martynowicz. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script> <!-- Link to external JavaScript file -->
+            <p>&copy; 2024 Bill Martynowicz. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
