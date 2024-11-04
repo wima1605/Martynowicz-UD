@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bill Martynowicz's Class Portal</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <div class="container" role="main">
+        <header class="header" role="banner">
             <h1>Welcome to Bill Martynowicz's Class Portal</h1>
         </header>
 
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -23,12 +23,12 @@
             </ul>
         </nav>
 
-        <aside class="aside-left">
+        <aside class="aside-left" role="complementary" aria-label="Announcements">
             <h2>Announcements</h2>
             <p>Check here for important class announcements and updates.</p>
         </aside>
 
-        <main class="main">
+        <main class="main" role="main">
             <section id="hero">
                 <p>This is the landing page for all my class projects and assignments.</p>
             </section>
@@ -48,7 +48,7 @@
             </section>
         </main>
 
-        <aside class="aside-right">
+        <aside class="aside-right" role="complementary" aria-label="Useful Links">
             <h2>Useful Links</h2>
             <ul>
                 <li><a href="https://www.cuboulder.edu">CU Boulder</a></li>
@@ -57,7 +57,7 @@
             </ul>
         </aside>
 
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <h2>Contact Information</h2>
             <p>If you need to reach me, feel free to contact me at my email: <a href="mailto:wima1605@colorado.edu">wima1605@colorado.edu</a></p>
             <p>&copy; 2024 Bill Martynowicz. All rights reserved.</p>
