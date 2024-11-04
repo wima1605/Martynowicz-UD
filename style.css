@@ -1,0 +1,119 @@
+/* Import Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid Layout for the Page */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main aside-right"
+        "aside-left main aside-right"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ececec;
+    padding: 15px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.aside-left {
+    grid-area: aside-left;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.aside-right {
+    grid-area: aside-right;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #ececec;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside-left"
+            "aside-right"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav li a {
+        font-size: larger;
+        padding: 10px;
+    }
+}
