@@ -156,6 +156,7 @@ body {
 
 
 .footer {
+      font-weight: bold; 
     grid-area: footer;
     text-align: center;
     background-color: #2E7D32;
@@ -165,7 +166,7 @@ body {
 }
 
 .footer a {
-    color: #FFD700; 
+    color: black; 
     text-decoration: none;
     font-weight: bold; 
 }
