@@ -41,6 +41,14 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 3px solid black;
 }
+.nav h4 {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 .nav {
     grid-area: nav;
@@ -100,7 +108,7 @@ body {
 }
 .aside-left {
     grid-area: aside-left;
-    color: white;
+    color: black;
 }
 .aside-left a {
     color: black;
@@ -108,11 +116,12 @@ body {
 }
 
 .aside-left a:hover {
-    color: whitesmoke;
+  
     text-decoration: underline;
 }
 
 .aside-right ul {
+        font-size: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
