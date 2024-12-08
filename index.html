@@ -1,79 +1,122 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bill Martynowicz's Class Portal</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container" role="main">
-        <header class="header" role="banner">
+    <div class="container">
+        <header class="header">
             <h1>Welcome to Bill Martynowicz's Class Portal</h1>
         </header>
 
-<nav class="nav" role="navigation" aria-label="Main Navigation" style="text-align: center;">
-    <h2 style="margin-bottom: 10px;">Navigation</h2>
-    <ul style="display: inline-flex; list-style-type: none; padding: 0;">
-        <li style="margin: 0 15px;"><a href="#hero" style="color: #000000;">Home</a></li>
-        <li style="margin: 0 15px;"><a href="#about" style="color: #000000;">About Me</a></li>
-        <li style="margin: 0 15px;"><a href="#assignments" style="color: #000000;">Assignments</a></li>
-        <li style="margin: 0 15px;"><a href="#footer" style="color: #000000;">Contact</a></li>
-    </ul>
-</nav>
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
 
-
-
-        <aside class="aside-left" role="complementary" aria-label="Announcements">
-            <h2>Announcements</h2>
-            <p>Check here for important class announcements and updates.</p>
+        <aside class="aside-left">
+            <h2>Useful Links</h2>
+            <ul>
+                <li>
+                    <a href="https://www.colorado.edu/" target="_blank">CU Boulder</a>
+                    <p>Explore the University of Colorado Boulder’s official website for academic programs, campus events, and student resources.</p>
+                </li>
+                <li>
+                    <a href="https://www.wnba.com" target="_blank">WNBA</a>
+                    <p>Stay updated on the Women’s National Basketball Association with the latest news, schedules, and team updates.</p>
+                </li>
+                <li>
+                    <a href="https://www.github.com" target="_blank">GitHub</a>
+                    <p>Discover a collaborative platform for developers to share code, manage projects, and build software together.</p>
+                </li>
+                <li>
+                    <a href="https://www.dezeen.com/tag/accessible-design/" target="_blank">Dezeen</a>
+                    <p>Read articles and insights about accessible design in architecture, products, and technology on Dezeen.</p>
+                </li>
+            </ul>
         </aside>
+        
 
-        <main class="main" role="main">
-
-            <section id="hero">
-                <h2>Information</h2>
-                <p>This is the landing page for all my class projects and assignments.</p>
-            </section>
+        <main class="main">
 
             <section id="about">
                 <h2>About Me</h2>
-                  <img src="mypic.png" alt="Bill Martynowicz" style="width: 200px; border-radius: 50%;">
+                <img src="mypic.png" alt="Bill Martynowicz" class="profile-pic">
+                <p>Hi! I’m Bill Martynowicz, a Computer Science student at CU Boulder who loves blending technology with creativity. Whether I’m skiing down the slopes, bowling, or playing video games, I’m always drawn to activities that challenge me and keep me learning. I find inspiration in the precision of bowling and the strategy of gaming, both of which push me to think critically and apply those skills to my coding projects. On top of that, I’m a big WNBA fan and can’t wait to cheer on the Golden State Valkyries as the league continues to grow.
 
-<p>
-    Hello! I’m Bill Martynowicz, a Computer Science student at CU Boulder with a passion for blending technology and creativity. I thrive on the thrill of skiing, hitting the slopes whenever I can, and I’m also deeply into video games, where I find inspiration for both play and design. Outside of these, competitive bowling is my focus, a sport that demands precision and patience—skills I apply to my studies and coding projects as well. A huge WNBA fan, I’m particularly excited about the league’s expansion and the debut of the Golden State Valkyries, who I’ll be cheering for enthusiastically. My varied interests fuel my journey in tech, bringing together the excitement of sports, the strategy of games, and the problem-solving mindset essential in computer science.
-</p>           
-            </section>
+                    When it comes to tech, I’m passionate about solving problems and bringing ideas to life. I’ve worked with languages like Java, Python, C++, HTML, CSS, JavaScript, C, and Scala, and I enjoy finding creative ways to tackle challenges in both school and personal projects. For me, coding is more than just writing programs—it’s about creating something meaningful and having fun while doing it. Whether I’m exploring the latest advancements or building something new, I’m excited to keep growing and making an impact.
+                </p>  </section>
 
             <section id="assignments">
                 <h2>My Coding Assignments</h2>
                 <ul>
-                    <li><a href="oda.html" style="color: #000000;">Assignment 1</a> (Oda page)</li>
-                    <li><a href="fruits.html" style="color: #000000;">Assignment 2</a> (Fruits page)</li>
-                    <li><a href="#" style="color: #000000;">Assignment 3</a> (Assignment 3)</li>
+                    <li><a href="oda.html">Assignment 1: Coding & Posting a Web Page - The Basics</a></li>
+                    <li><a href="fruits.html">Assignment 2: Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+                    <li><a href="#">Assignment 3: Accessible CSS Layout (this page)</a></li>
+                    <li><a href="https://wima1605.github.io/Martynowicz_UD_Final_Project/">Final Project - Universal Design Website</a></li>
                 </ul>
             </section>
         </main>
 
-        <aside class="aside-right" role="complementary" aria-label="Useful Links">
-            <h2>Useful Links</h2>
+        <aside class="aside-right">
+            <h2>Announcements</h2>
+            <p>Check out the latest articles on Universal Design and inclusivity:</p>
             <ul>
-                <li><a href="https://www.cuboulder.edu" style="color: #FFFFFF;">CU Boulder</a></li>
-                <li><a href="https://www.wnba.com" style="color: #FFFFFF;">WNBA</a></li>
-                <li><a href="https://www.github.com" style="color: #FFFFFF;">GitHub</a></li>
+                <li>
+                    <strong>November 12, 2024:</strong> 
+                    <a href="https://theconversation.com/airports-and-travel-hubs-can-be-overwhelming-for-autistic-people-heres-what-could-help-243032" target="_blank">
+                        Airports and travel hubs can be overwhelming for Autistic people. Here’s what could help
+                    </a> 
+               </li>
+                <li>
+                    <strong>April 22, 2024:</strong> 
+                    <a href="https://theconversation.com/academics-with-disabilities-south-african-universities-need-an-overhaul-to-make-them-genuinely-inclusive-225364" target="_blank">
+                        Academics with disabilities: South African universities need an overhaul to make them genuinely inclusive
+                    </a> 
+                </li>
+                <li>
+                    <strong>April 9, 2024:</strong> 
+                    <a href="https://theconversation.com/what-is-biophilic-design-3-ways-green-buildings-work-better-for-neurodivergent-people-226003" target="_blank">
+                        What is biophilic design? 3 ways ‘green’ buildings work better for neurodivergent people
+                    </a> 
+                </li>
+                <li>
+                    <strong>December 13, 2023:</strong> 
+                    <a href="https://theconversation.com/what-does-a-building-need-to-call-itself-accessible-and-is-that-enough-217278" target="_blank">
+                        What does a building need to call itself ‘accessible’ – and is that enough?
+                    </a> 
+               </li>
+                <li>
+                    <strong>July 24, 2023:</strong> 
+                    <a href="https://theconversation.com/working-from-home-has-worked-for-people-with-disability-the-back-to-the-office-push-could-wind-back-gains-209870" target="_blank">
+                        Working from home has worked for people with disability. The back-to-the-office push could wind back gains
+                    </a> 
+              </li>
+                <li>
+                    <strong>April 23, 2023:</strong> 
+                    <a href="https://theconversation.com/4-ways-all-online-university-courses-could-promote-student-mental-health-200889" target="_blank">
+                        4 ways all online university courses could promote student mental health
+                    </a> 
+               
+                </li>
             </ul>
         </aside>
+        
 
-        <footer class="footer" role="contentinfo">
+        <footer class="footer" id="footer">
             <h2>Contact Information</h2>
-            <p style="color:  #FFFFFF;">If you need to reach me, feel free to contact me at my email: <a href="#" style="color:  #FFFFFF;">wima1605@colorado.edu</a></p>
-            <p style="color:  #FFFFFF;">&copy; 2024 Bill Martynowicz. All rights reserved.</p>
+            <p>Email: <a href="mailto:wima1605@colorado.edu">wima1605@colorado.edu</a></p>
+            <p>&copy; 2024 Bill Martynowicz</p>
         </footer>
     </div>
 </body>
 </html>
-
-
-           
