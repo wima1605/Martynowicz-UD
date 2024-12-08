@@ -159,7 +159,7 @@ body {
     grid-area: footer;
     text-align: center;
     background-color: #2E7D32;
-    color: white;
+    color: black;
     padding: 15px;
     border-radius: 10px;
 }
@@ -171,7 +171,7 @@ body {
 }
 
 .footer a:hover {
-    color: #FFEB3B; 
+    color: black; 
     text-decoration: underline; 
 }
 
