@@ -160,19 +160,19 @@ body {
     grid-area: footer;
     text-align: center;
     background-color: #2E7D32;
-    color: black;
+    color: white;
     font-weight: bold; 
     padding: 15px;
     border-radius: 10px;
 }
 
 .footer a {
-    color: black; 
+    color: white; 
     font-weight: bold; 
 }
 
 .footer a:hover {
-    color: black; 
+    color: white; 
     text-decoration: underline; 
 }
 
