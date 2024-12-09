@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
     background-color: #4A4A4A;
     color: white;
+
 }
 
 /* Grid Layout */
@@ -179,6 +180,7 @@ body {
 
 .footer a {
     color: white; 
+    font-weight: bold; 
     font-weight: bold; 
 }
 
